@@ -1,0 +1,43 @@
+body {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.3em;
+  color: #ccc;
+}
+
+footer {
+  margin-top: 80px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+#bot-controls {
+  margin-top: 50px;
+}
+
+button {
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00cc99;
+}
