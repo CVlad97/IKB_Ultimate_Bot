@@ -1,0 +1,4 @@
+<GameTapToEarn onEarn={(amount) => {
+  console.log(`+${amount} USDT gagné 🎉`);
+  // TODO: log vers Sheets ou simulateur de solde
+}} />

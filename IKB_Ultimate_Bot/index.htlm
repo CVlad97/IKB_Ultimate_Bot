@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IKB Ultimate Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Bienvenue sur <span style="color:#00ffcc">IKB Ultimate Bot</span></h1>
+  <p>Interface Web fonctionnelle – tout est prêt pour le bot crypto 🤖</p>
+
+  <div id="bot-controls">
+    <button onclick="startBot()">▶️ Lancer le bot</button>
+    <button onclick="stopBot()">⏹️ Stopper le bot</button>
+    <p id="bot-status">Statut : Inactif</p>
+  </div>
+
+  <footer>
+    <p>© 2025 - Projet de Vladimir Claveau</p>
+  </footer>
+
+  <script>
+    function startBot() {
+      document.getElementById("bot-status").innerText = "Statut : ✅ Bot en cours d'exécution";
+    }
+    function stopBot() {
+      document.getElementById("bot-status").innerText = "Statut : ⛔ Bot arrêté";
+    }
+  </script>
+</body>
+</html>
