@@ -53,6 +53,42 @@
           <p>Les validations, refus, simulations et erreurs doivent rester tracables.</p>
         </article>
       </section>
+
+      <section class="lead-panel" aria-labelledby="lead-title">
+        <div>
+          <p class="eyebrow">Acces pilote controle</p>
+          <h2 id="lead-title">Qualifier une demande sans activer de bot reel.</h2>
+          <p class="subtitle">
+            Le formulaire garde une copie locale et prepare un message WhatsApp.
+            Aucun ordre de trading, retrait ou transfert n'est envoye.
+          </p>
+        </div>
+        <form class="lead-form" onsubmit="prepareLead(event)">
+          <label>
+            Nom ou projet
+            <input id="lead-name" name="name" placeholder="Nom, societe ou projet" />
+          </label>
+          <label>
+            Contact
+            <input id="lead-contact" name="contact" placeholder="WhatsApp ou email" />
+          </label>
+          <label>
+            Objectif
+            <select id="lead-objective" name="objective">
+              <option>Audit bot existant</option>
+              <option>Simulation paper mode</option>
+              <option>Dashboard controle</option>
+              <option>Securisation des secrets</option>
+            </select>
+          </label>
+          <label>
+            Contexte
+            <textarea id="lead-context" name="context" placeholder="Ce qu'il faut analyser ou cadrer"></textarea>
+          </label>
+          <button type="submit">Preparer la demande</button>
+          <p id="lead-feedback" class="lead-feedback" aria-live="polite"></p>
+        </form>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>

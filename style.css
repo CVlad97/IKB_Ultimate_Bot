@@ -94,3 +94,62 @@ article p {
   color: #cbd5e1;
   line-height: 1.6;
 }
+
+.lead-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 18px;
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid rgba(103, 232, 249, 0.22);
+  border-radius: 26px;
+  background: rgba(2, 6, 23, 0.76);
+}
+
+.lead-panel h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+}
+
+.lead-form {
+  display: grid;
+  gap: 12px;
+}
+
+.lead-form label {
+  display: grid;
+  gap: 7px;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.lead-form input,
+.lead-form select,
+.lead-form textarea {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.88);
+  color: #f8fafc;
+  font: inherit;
+  padding: 13px 14px;
+}
+
+.lead-form textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.lead-feedback {
+  min-height: 22px;
+  color: #67e8f9;
+  font-weight: 800;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .lead-panel {
+    grid-template-columns: 1fr;
+  }
+}
