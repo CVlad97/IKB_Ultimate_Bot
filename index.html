@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IKB Ultimate Bot - Cockpit crypto controle</title>
+    <meta
+      name="description"
+      content="Interface de pilotage crypto en mode simulation/read-only avec garde-fous, journal d'audit, kill switch et validation humaine obligatoire."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#070b12" />
+    <link rel="canonical" href="https://cvlad97.github.io/IKB_Ultimate_Bot/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IKB Ultimate Bot - Simulation controlee" />
+    <meta
+      property="og:description"
+      content="Cockpit prive pour suivre, simuler et auditer des scenarios crypto sans promesse de gain ni execution autonome."
+    />
+    <meta property="og:url" content="https://cvlad97.github.io/IKB_Ultimate_Bot/" />
+    <meta property="og:site_name" content="IKB Ultimate Bot" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">PAPER ONLY / READ ONLY</p>
+        <h1>IKB Ultimate Bot</h1>
+        <p class="subtitle">
+          Cockpit prive pour analyser, simuler et documenter des scenarios crypto.
+          Aucun gain garanti, aucun conseil financier personnalise, aucune action
+          sensible sans validation humaine.
+        </p>
+        <div class="actions">
+          <button type="button" onclick="setMode('Simulation active')">Lancer une simulation</button>
+          <button type="button" class="secondary" onclick="setMode('Kill switch active')">Activer kill switch</button>
+        </div>
+        <p id="bot-status" class="status">Statut : inactif</p>
+      </section>
+
+      <section class="grid" aria-label="Garde-fous">
+        <article>
+          <h2>Controle humain</h2>
+          <p>Chaque decision sensible doit etre relue et validee manuellement avant execution.</p>
+        </article>
+        <article>
+          <h2>Secrets cote serveur</h2>
+          <p>Aucune cle API, seed phrase ou cle privee ne doit etre exposee dans le frontend.</p>
+        </article>
+        <article>
+          <h2>Journal d'audit</h2>
+          <p>Les validations, refus, simulations et erreurs doivent rester tracables.</p>
+        </article>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
